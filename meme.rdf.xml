@@ -11,3 +11,4 @@ xmlns:schema="http://schema.org/">
    <meme:topText>You GET AN IRI, You GET AN IRI</meme:topText>
    <meme:bottomText>EVERYONE GETS AN IRI!!!!</meme:bottomText>
 </rdf:Description>
+</rdf:RDF>
