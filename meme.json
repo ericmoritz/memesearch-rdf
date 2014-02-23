@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "@vocab": "http://memegenerator.net/vocab/meme#",
+    "schema": "http://schema.org/",
+    "url": "schema:url"
+  },
+  "@id": "http://memegenerator.net/instance/46341004",
+  "url": "http://cdn.memegenerator.net/instances/46341004.jpg",
+  "bottomText": "EVERYONE GETS AN IRI!!!!",
+  "topText": "You GET AN IRI, You GET AN IRI"
+}

@@ -1,0 +1,7 @@
+@prefix meme: <http://memegenerator.net/vocab/meme#> .
+@prefix schema: <http://schema.org/> .
+
+<http://memegenerator.net/instance/46341004> schema:url "http://cdn.memegenerator.net/instances/46341004.jpg" .
+<http://memegenerator.net/instance/46341004> meme:topText "You GET AN IRI, You GET AN IRI" .
+<http://memegenerator.net/instance/46341004> meme:bottomText "EVERYONE GETS AN IRI!!!!" .
+
