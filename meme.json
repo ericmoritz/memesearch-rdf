@@ -1,11 +1,21 @@
 {
   "@context": {
-    "@vocab": "http://memegenerator.net/vocab/meme#",
+    "meme": "http://memegenerator.net/vocab/meme#",
     "schema": "http://schema.org/",
-    "url": "schema:url"
+    "html_url": "schema:url",
+    "image_url": "schema:image",
+    "bottom": "meme:bottomText",
+    "top": "meme:topText"
   },
   "@id": "http://memegenerator.net/instance/46341004",
-  "url": "http://cdn.memegenerator.net/instances/46341004.jpg",
-  "bottomText": "EVERYONE GETS AN IRI!!!!",
-  "topText": "You GET AN IRI, You GET AN IRI"
+  "html_url": "http://memegenerator.net/instance/46341004",
+  "image_url": "http://cdn.memegenerator.net/instances/46341004.jpg",
+  "bottom": "EVERYONE GETS AN IRI!!!!",
+  "top": "You GET AN IRI, You GET AN IRI"
 }
+
+
+
+
+
+

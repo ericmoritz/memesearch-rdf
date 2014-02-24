@@ -7,8 +7,11 @@
  
   <rdf:Description
     rdf:about="http://memegenerator.net/instance/46341004"
-    schema:url="http://cdn.memegenerator.net/instances/46341004.jpg">
+    schema:url="http://memegenerator.net/instance/46341004"
+    schema:image="http://cdn.memegenerator.net/instances/46341004.jpg">
       <meme:topText>You GET AN IRI, You GET AN IRI</meme:topText>
       <meme:bottomText>EVERYONE GETS AN IRI!!!!</meme:bottomText>
   </rdf:Description>
 </rdf:RDF>
+
+

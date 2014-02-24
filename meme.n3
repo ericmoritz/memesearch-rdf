@@ -1,11 +1,19 @@
 @prefix meme: <http://memegenerator.net/vocab/meme#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://memegenerator.net/instance/46341004> meme:bottomText "EVERYONE GETS AN IRI!!!!" ;
-    meme:topText "You GET AN IRI, You GET AN IRI" ;
-    schema:url "http://cdn.memegenerator.net/instances/46341004.jpg" .
+<http://memegenerator.net/instance/46341004> meme:bottomText "EVERYONE GETS AN IRI!!!!" .
+<http://memegenerator.net/instance/46341004> meme:topText "You GET AN IRI, You GET AN IRI" .
+<http://memegenerator.net/instance/46341004> 
+    schema:url "http://memegenerator.net/instance/46341004" .
+<http://memegenerator.net/instance/46341004> 
+    schema:image "http://cdn.memegenerator.net/instances/46341004.jpg" .
+
+
+
+
+
+
+
+
+
 
