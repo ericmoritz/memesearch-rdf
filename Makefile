@@ -27,7 +27,7 @@ clean-state:
 	@rm -rf .state/	
 
 clean-content:
-	@rm -rf priv/www/data/
+	@rm -rf static/data/
 
 # Get rid of all the downloaded data
 clean-data:
@@ -39,26 +39,26 @@ download-data: deps
 	@python bin/memescraper.py
 
 # Converts the example data into the various formats
-convert-www-data: priv/www/data priv/www/data/meme.html priv/www/data/meme.n3 priv/www/data/meme.rdf.xml priv/www/data/meme.jsonld
+convert-www-data: static/data static/data/meme.html static/data/meme.n3 static/data/meme.rdf.xml static/data/meme.jsonld
 
 
 ###===================================================================
 ### Files
 ###===================================================================
-priv/www/data:
-	mkdir -p priv/www/data
+static/data:
+	mkdir -p static/data
 
-priv/www/data/meme.jsonld:
-	python bin/convert_rdf.py priv/www/src/meme.html microdata json-ld > priv/www/data/meme.jsonld
+static/data/meme.jsonld:
+	python bin/convert_rdf.py src/meme.html microdata json-ld > static/data/meme.jsonld
 
-priv/www/data/meme.html:
-	cp priv/www/src/meme.html priv/www/data/meme.html
+static/data/meme.html:
+	cp src/meme.html static/data/meme.html
 
-priv/www/data/meme.rdf.xml:
-	python bin/convert_rdf.py priv/www/src/meme.html microdata application/rdf+xml > priv/www/data/meme.rdf.xml
+static/data/meme.rdf.xml:
+	python bin/convert_rdf.py src/meme.html microdata application/rdf+xml > static/data/meme.rdf.xml
 
-priv/www/data/meme.n3:
-	python bin/convert_rdf.py priv/www/src/meme.html microdata n3 > priv/www/data/meme.n3
+static/data/meme.n3:
+	python bin/convert_rdf.py src/meme.html microdata n3 > static/data/meme.n3
 
 # I have to use requirements.txt because there are some 
 # repos not on pypi

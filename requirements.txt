@@ -8,6 +8,7 @@ cssselect==0.9.1
 gevent==1.0
 greenlet==0.4.2
 grequests==0.2.0
+gunicorn==18.0
 html5lib==0.95
 isodate==0.5.0
 itsdangerous==0.23

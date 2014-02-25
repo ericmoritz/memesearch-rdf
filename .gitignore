@@ -3,4 +3,5 @@
 .venv/
 build/
 data/
+static/data/
 .state/

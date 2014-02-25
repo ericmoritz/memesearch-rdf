@@ -1,6 +1,7 @@
 from flask import Flask, Response
 import json
 from rdflib import Namespace
+
 app = Flask(__name__)
 
 vocabsNS = Namespace("http://memesearch.herokuapp.com/static/vocabs/")
