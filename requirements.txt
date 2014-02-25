@@ -3,7 +3,6 @@ Jinja2==2.7.2
 MarkupSafe==0.18
 SPARQLWrapper==1.5.2
 Werkzeug==0.9.4
-cffi==0.8.1
 cssselect==0.9.1
 gevent==1.0
 greenlet==0.4.2
