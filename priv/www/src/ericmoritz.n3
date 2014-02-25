@@ -1,0 +1,15 @@
+@prefix schema: <http://schema.org/>.                                                                                                                                                                                                                                                     
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.                                                                                                                                                                                                                                               
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                          
+<http://eric.themoritzfamily.com/> schema:name "Eric Moritz" ;                                                                                                                                                                                                                            
+    rdf:type schema:Person ;                                                          
+    foaf:homepage <http://eric.themoritzfamily.com/>;
+                                                                           
+    schema:email "eric@themoritzfamily.com" ;                                                                                                                                                                                                                                             
+    schema:sameAs <http://twitter.com/ericmoritz> ;                                                                                                                                                                                                                                       
+    schema:sameAs <http://github.com/ericmoritz> ;
+                                                                                                                                                                                                                                     
+    schema:affiliation <http://www.gannettdigital.com/> ;                                                                                                                                                                                                                                 
+    schema:jobTitle "Technical Fellow".  
+    

@@ -1,8 +1,21 @@
+Flask==0.10.1
+Jinja2==2.7.2
+MarkupSafe==0.18
 SPARQLWrapper==1.5.2
+Werkzeug==0.9.4
+cffi==0.8.1
+cssselect==0.9.1
+gevent==1.0
+greenlet==0.4.2
+grequests==0.2.0
 html5lib==0.95
 isodate==0.5.0
+itsdangerous==0.23
+lxml==3.3.1
 microdata==0.4.1
+pycparser==2.10
 pyparsing==2.0.1
+pyquery==1.2.8
 rdflib==4.1.0
 -e git+https://github.com/RDFLib/rdflib-jsonld.git@e5c4b5f6f4de1e79c93503c0b28d87934a674da1#egg=rdflib_jsonld-master
 -e git+https://github.com/edsu/rdflib-microdata.git@2b2eb632a3407bf889d03e1c3dde8657d56c5c6e#egg=rdflib_microdata-master

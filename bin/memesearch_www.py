@@ -1,6 +1,10 @@
 from flask import Flask, Response
 import json
+from rdflib import Namespace
 app = Flask(__name__)
+
+vocabsNS = Namespace("http://memesearch.herokuapp.com/static/vocabs/")
+
 ###===================================================================
 ### Data access functions
 ###===================================================================
@@ -17,9 +21,10 @@ MEME_DB = {
         "@type": ["hydra:Link", "meme:MemeDetailPage"],
         "name": "I shall not pass.",
         "image": "http://i.imgur.com/DiaODFKb.jpg",
-        "url": "/meme//DiaODFK"
+        "url": "/meme/DiaODFK"
     }
 }
+
 class DB(object):
     def search(self, query):
         """
@@ -41,7 +46,6 @@ class DB(object):
 ###===================================================================
 ### Utilities
 ###===================================================================
-
 def _json_response(data):
     return Response(
         json.dumps(
@@ -60,7 +64,7 @@ def _merge_dict(base, extension):
 ###===================================================================
 def _web_page():
     return {
-        "@context": "/meme.jsonld",
+        "@context": vocabsNS['meme.jsonld'].toPython(),
         "homepage": "/",
         "searchLink": {
             "@type": "IriTemplate",
@@ -69,8 +73,8 @@ def _web_page():
                 {
                     "@type": "IriTemplateMapping", 
                     "variable": "q",
-                    "proprety": "hydra:freetextQuery",
-                    "required": True
+                    "property": "hydra:freetextQuery",
+                    "required": True,
                 }
             ]
         },
@@ -156,7 +160,7 @@ def _index_resource():
 
 def _recent_collection():
     return {
-        "@type": "hydra:RecentMemeCollection",
+        "@type": "meme:RecentMemeCollection",
         "member": DB().recent()
 
     }
